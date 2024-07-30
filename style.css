@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+  block-size: 100%;
+}
+
+.light {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  font-size: 3rem;
+  transform: rotate(0deg) translate(50%);
+  cursor: pointer;
+  inset-block-start: 50px;
+  inset-inline-start: 48%;
+  max-inline-size: 50px;
+  max-block-size: 50px;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  width: 700px;
+  position: relative;
+  margin: 50px 0 0;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.5;
+  text-align: center;
+  inset-block-start: -15%;
+  color: rgb(220, 190, 138, 0.7);;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+  filter: brightness(0.01);
+  transition: 1s ease;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.bright {
+  filter: brightness(100%);
+  /* задайте фильтр здесь */
+}
